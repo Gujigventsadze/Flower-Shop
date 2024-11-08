@@ -1,0 +1,56 @@
+.cartbox-container {
+    display: flex;
+    gap: 2rem;
+    box-sizing: border-box;
+    box-shadow: 0 0 3px gray;
+    width: 100%;
+    padding: 1rem 2rem;
+    align-items: center;
+    border-radius: 2rem;
+}
+.cartbox-img img {
+    height: 12rem;
+    border-radius: 2rem;
+}
+
+.cartbox-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 30rem;
+    font-family: "Montserrat";
+    gap: 1rem;
+}
+.description-title {
+    font-size: 3rem;
+}
+.description-price {
+    font-size: 1.6rem;
+}
+
+.delete-icon img {
+    height: 3rem;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+.delete-icon img:hover {
+    opacity: 0.7;
+}
+.delete-icon img:active {
+    opacity: 0.5;
+}
+
+@media (max-width: 769px) {
+    .cartbox-container {
+        margin-top: 1rem;
+    }
+}
+@media (max-width: 426px) {
+    .cartbox-container {
+        flex-direction: column;
+    }
+    .cartbox-img img {
+        width: 15rem;
+        height: auto;
+    }
+}

@@ -1,0 +1,77 @@
+.carttotal-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.2rem;
+    font-family: "Montserrat";
+    box-sizing: border-box;
+    padding: 3rem;
+    box-shadow: 0 0 3px gray;
+    height: fit-content;
+    border-radius: 2rem;
+    width: 30%;
+}
+
+.total-price,
+.tax,
+.shipping,
+.final-price {
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+}
+
+.final-price {
+    color: black;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.checkout-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.checkout-btn button {
+    border: none;
+    font-size: 2rem;
+    box-sizing: border-box;
+    padding: 0.7rem 3rem;
+    background-color: black;
+    color: white;
+    font-family: "Montserrat";
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.15s;
+}
+
+.checkout-btn button:hover {
+    opacity: 0.7;
+}
+.checkout-btn button:active {
+    opacity: 0.5;
+}
+
+@media(max-width: 1025px) {
+    .total-price,
+    .tax,
+    .shipping {
+        font-size: 1.2rem;
+    }
+    .final-price {
+        font-size: 1.6rem;
+    }
+}
+
+@media(max-width: 769px) {
+    .carttotal-container {
+        width: 70%;
+    }
+}
+@media (max-width: 426px) {
+    .carttotal-container {
+        width: 100%;
+        padding: 1.5rem 1rem;
+    }
+}

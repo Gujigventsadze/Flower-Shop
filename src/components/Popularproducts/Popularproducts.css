@@ -1,0 +1,38 @@
+#popular-products-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 100px;
+}
+
+.pop-products-title {
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+.pop-products-grid {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media(max-width: 1025px) {
+    .pop-products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 769px) {
+    .pop-products-grid {
+        width: 90%;
+    }
+}
+@media(max-width: 426px) {
+    .pop-products-grid {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

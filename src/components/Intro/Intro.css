@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Freeman&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
+#intro-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(238, 178, 178);
+    box-sizing: border-box;
+    padding: 0 10rem;
+    font-family: "Poiret One";
+    gap: 5rem;
+}
+.intro-text {
+    font-size: 4.5rem;
+    font-weight: 500;
+}
+.flowers-word {
+    color: rgb(186, 62, 62);
+}
+.intro-img {
+    height: 100%;
+}
+.intro-img img {
+    height: 31rem;
+    object-fit: cover;
+}
+/* Responsive Layout */
+
+@media (max-width: 769px) {
+    #intro-section {
+        overflow: hidden;
+        gap: 1rem;
+        padding: 0 3rem;
+    }
+    .intro-text {
+        font-size: 4rem;
+    }
+}
+@media (max-width: 426px) {
+    .intro-text {
+        font-size: 2.5rem;
+    }
+}
