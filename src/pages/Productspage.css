@@ -1,0 +1,60 @@
+#products-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Montserrat";
+}
+.products-header {
+    font-size: 3rem;
+    margin-top: 3rem;
+}
+
+.products-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+}
+
+/* About page css because I am too lazy to create a separate file */
+
+#aboutpage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Montserrat";
+    gap: 1rem;
+}
+.about-header {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-top: 3rem;
+}
+.about-body {
+    width: 50%;
+    text-align: justify;
+    line-height: 25px;
+}
+
+
+@media (max-width: 1025px) {
+    .products-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .about-body {
+        width: 75%;
+    }
+}
+@media (max-width: 769px) {
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 426px) {
+    .products-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .about-body {
+        width: 90%;
+    }
+}

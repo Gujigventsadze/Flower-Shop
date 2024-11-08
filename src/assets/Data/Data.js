@@ -40,7 +40,7 @@ export const allProducts = [
     title: "Yellow Rose Bouquet",
     price: 289,
     category: "rose",
-    popular: true,
+    popular: false,
     description:
       "A vibrant bouquet of yellow roses, representing friendship and joy, perfect for any occasion.",
   },

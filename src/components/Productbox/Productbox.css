@@ -36,7 +36,7 @@
     position: absolute;
     opacity: 0;
     transform: translateX(100%);
-    left: 35%;
+    left: 30%;
     transition: 0.3s;
 }
 .productbox-container:hover .productbox-price {
@@ -50,6 +50,29 @@
 
 .cart:hover {
     color: palevioletred;
+}
+
+.add-successfully {
+    color: green;
+    margin-top: 19px;
+    opacity: 0;
+    transition: opacity 0.15s ease-in-out;
+}
+.add-successfully-visible {
+    opacity: 1;
+    color: green;
+    margin-top: 19px;
+    transition: opacity 0.15s ease-in-out;
+}
+
+.err {
+    color: red;
+    transition: opacity 0.15s ease-in-out;
+    opacity: 0;
+}
+.err-visible {
+    color: red;
+    transition: opacity 0.15s ease-in-out;
 }
 
 /* Responsice Layout */

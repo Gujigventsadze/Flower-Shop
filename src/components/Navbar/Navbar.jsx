@@ -22,7 +22,6 @@ const Navbar = () => {
           <Link to="/">Home</Link>
           <Link to="/products">Products</Link>
           <Link to="/about">About</Link>
-          <Link to="/contact">Contact</Link>
         </ul>
         <div className="navbar-cart">
           <Link to="/cart" className="cart-container">
@@ -47,14 +46,11 @@ const Navbar = () => {
         <Link to="/" onClick={handleMenuClick}>
           Home
         </Link>
-        <Link to="/about" onClick={handleMenuClick}>
-          About
-        </Link>
         <Link to="/products" onClick={handleMenuClick}>
           Products
         </Link>
-        <Link to="/contact" onClick={handleMenuClick}>
-          Contact
+        <Link to="/about" onClick={handleMenuClick}>
+          About
         </Link>
         <Link to="/cart" onClick={handleMenuClick}>
           Cart
